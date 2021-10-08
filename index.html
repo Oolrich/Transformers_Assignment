@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Transformers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="heading">Voltage Regulation calculation</h1>
+    </header>
+    <div class="main-container">
+        <li>
+            <div class="form">Enter rating of Transformer in VA:</div>
+            <input class="form-input" type="text" id="1">
+        </li>
+        <li>
+            <div class="form">Enter Voltage of Transformer:</div>
+            <input class="form-input" type="text" id="volt">
+        </li>
+        <li>
+            <div class="form">Enter No load secondary voltage in V:</div>
+            <input class="form-input" type="text" id="2">
+        </li>
+        <li>
+            <div class="form">Enter secondary winding resistance in Ω:</div>
+            <input class="form-input" type="text" id="3">
+        </li>
+        <li>
+            <div class="form">Enter Secondary reactance in Ω :</div>
+            <input class="form-input" type="text" id="4">
+        </li>
+        <li>
+            <div class="form">Enter Power factor at secondary:</div>
+            <input class="form-input" type="text" id="5">
+        </li>
+        <li>
+            <div class="form">Voltage Regulation % :</div>
+            <span class="form-output form-input" id="output"></span>
+        </li>
+    </div>
+    <div class="result">
+        <button class="form-submit" id="submit" onclick="submit()">SUBMIT</button>
+    </div>
+    <div class="footer">
+        Copyright 2021 Shourya Gyanvarsha. NIT Rourkela
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
